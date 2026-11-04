@@ -1,7 +1,9 @@
 # EX-02: Cross-Platform Prompting – Evaluating Diverse Techniques in AI-Powered Text Summarization
+
 ## Name : SAJITH AHAMED F
 ## REG NO: 212223240144
 ## Dept: B.tech & AIML
+
 ## 1. Introduction
 
 This experiment evaluates how different prompting techniques influence the quality of AI-generated summaries using two AI platforms: **ChatGPT and Google Gemini**.
@@ -55,6 +57,7 @@ Six prompting techniques were used in this experiment.
 
 **Prompt:**
 
+```text
 Read the attached research article titled "Digital twin-based applications in crop monitoring" and write a clear summary of the article.
 
 Include the main objective, key concepts, important findings, applications, challenges, and conclusion.
@@ -62,6 +65,7 @@ Include the main objective, key concepts, important findings, applications, chal
 Use simple English and keep the summary within 100 words.
 
 Do not include information that is not present in the article.
+```
 
 **Purpose:** To establish a baseline and observe how both AI tools summarize an article using a simple instruction.
 
@@ -69,6 +73,7 @@ Do not include information that is not present in the article.
 
 **Prompt:**
 
+```text
 Act as an expert agricultural technology researcher with knowledge of digital twin systems.
 
 Read the attached research article titled "Digital twin-based applications in crop monitoring" and prepare a clear summary.
@@ -78,6 +83,7 @@ Explain the article's objective, key concepts, important findings, applications,
 Use simple English suitable for a college student. Keep the summary within 100 words.
 
 Use only information supported by the article.
+```
 
 **Purpose:** To evaluate whether assigning an expert role improves the quality and relevance of the generated summary.
 
@@ -85,6 +91,7 @@ Use only information supported by the article.
 
 **Prompt:**
 
+```text
 I am a college student studying Artificial Intelligence and Machine Learning. I need to understand a research article about digital twin technology in agriculture.
 
 Read the attached article titled "Digital twin-based applications in crop monitoring" and summarize it for my academic understanding.
@@ -94,6 +101,7 @@ Cover the main objective, digital twin concepts, modelling approaches, important
 Explain technical terms in simple English. Keep the summary within 100 words.
 
 Use only information from the article and do not add external information.
+```
 
 **Purpose:** To evaluate whether providing background information and user context helps generate more relevant explanations.
 
@@ -101,6 +109,7 @@ Use only information from the article and do not add external information.
 
 **Prompt:**
 
+```text
 Act as an agricultural technology researcher.
 
 Summarize the attached research article "Digital twin-based applications in crop monitoring" by following these strict constraints:
@@ -113,6 +122,7 @@ Summarize the attached research article "Digital twin-based applications in crop
 6. Ensure all statements are accurate and supported by the article.
 
 Provide only the summary.
+```
 
 **Purpose:** To test how accurately each AI tool follows strict word limits, formatting rules, and content restrictions.
 
@@ -120,6 +130,7 @@ Provide only the summary.
 
 **Prompt:**
 
+```text
 Act as an expert agricultural technology researcher.
 
 Read the attached research article titled "Digital twin-based applications in crop monitoring" and summarize it using the following exact structure:
@@ -135,6 +146,7 @@ Read the attached research article titled "Digital twin-based applications in cr
 Write 1–2 simple sentences under each heading. Use clear English suitable for a college student.
 
 Keep the entire summary within 150 words. Use only information supported by the article.
+```
 
 **Purpose:** To evaluate the ability of both tools to generate structured summaries according to a predefined output format.
 
@@ -142,6 +154,7 @@ Keep the entire summary within 150 words. Use only information supported by the 
 
 **Prompt:**
 
+```text
 Act as a senior agricultural technology researcher specializing in Artificial Intelligence and Digital Twin systems.
 
 I am a college student preparing an academic review of the research article titled "Digital twin-based applications in crop monitoring" by Tsega Y. Melesse (2025).
@@ -169,6 +182,7 @@ Use simple, academically appropriate English.
 Keep the summary within 150 words.
 Ensure factual accuracy and do not introduce unsupported information or external assumptions.
 Prioritize completeness, clarity, and faithful representation of the original article.
+```
 
 **Purpose:** To evaluate a carefully designed prompt combining role assignment, background context, content requirements, constraints, and structured output.
 
@@ -182,16 +196,20 @@ A total of **12 AI-generated summaries** were collected: six from ChatGPT and si
 
 **ChatGPT Output:**
 
+```text
 The article reviews digital twins for crop monitoring and management. A digital twin is a virtual model of a crop or farm, updated using sensor, satellite, and weather data. It discusses five approaches: physics-based, data-driven, hybrid, agent-based, and spatial models. These models support crop-health monitoring, yield prediction, irrigation planning, and pest and disease detection. The main challenges include poor data quality, integration difficulties, high costs, limited rural connectivity, cybersecurity, and privacy concerns. The article concludes that digital twins are promising but still developing. Standard methods and long-term studies are needed to understand their full potential.
+```
 
 **Gemini Output:**
 
+```text
 - **Objective**: Explore digital twin use in crop management.
 - **Key Concepts**: Virtual crop models built using physics-based, data-driven, or hybrid approaches.
 - **Findings**: Digital twins improve farm transparency and decision-making.
 - **Applications**: Used for health monitoring, yield prediction, and irrigation.
 - **Challenges**: Faced with high costs, poor data quality, and cybersecurity hurdles.
 - **Conclusion**: Though early-stage, digital twins offer strong potential for agricultural sustainability.
+```
 
 **Observation:** ChatGPT covered all five modelling approaches and provided more detail about challenges. Gemini produced a shorter, structured summary.
 
@@ -199,10 +217,13 @@ The article reviews digital twins for crop monitoring and management. A digital 
 
 **ChatGPT Output:**
 
+```text
 The article explores how digital twins improve crop monitoring and management. A digital twin is a virtual model of a real crop, updated using sensor data, satellite images, and weather information. It uses physics-based, data-driven, hybrid, agent-based, and spatial models. Findings show improved crop monitoring, yield prediction, and resource management. Applications include irrigation optimization, pest and disease detection, soil health monitoring, and farm planning. Major challenges include high costs, poor data quality, data integration, internet connectivity, and security issues. The article concludes that digital twins can support smarter, more efficient, and sustainable agriculture, but further research is needed.
+```
 
 **Gemini Output:**
 
+```text
 This review article explores digital twin applications in crop management.
 
 - **Objective:** Synthesize current research on digital twin modeling methodologies, roles, architectures, and challenges in crop monitoring.
@@ -211,6 +232,7 @@ This review article explores digital twin applications in crop management.
 - **Applications:** They optimize irrigation, predict yields, monitor crop health, and manage pests.
 - **Challenges:** Barriers include poor data quality, integration complexity, cybersecurity risks, and high costs.
 - **Conclusion:** Digital twins enhance sustainable agricultural productivity, though long-term performance evaluations are still needed.
+```
 
 **Observation:** Both tools included all five modelling approaches. ChatGPT provided more detailed application explanations, while Gemini described the review's research focus more specifically.
 
@@ -218,10 +240,13 @@ This review article explores digital twin applications in crop management.
 
 **ChatGPT Output:**
 
+```text
 The article reviews how digital twin technology improves crop monitoring and agricultural management. A digital twin is a virtual copy of a real crop system, continuously updated using sensor, satellite, and weather data. It identifies five modelling approaches: physics-based (simulating natural processes), data-driven (using machine learning), hybrid (combining both), agent-based (simulating individual plants), and spatial (analysing geographical variations). Key applications include crop health monitoring, yield prediction, irrigation optimization, pest detection, and resource management. Challenges include poor data quality, high costs, connectivity, cybersecurity, and model complexity. The article concludes that digital twins can improve productivity and sustainability, but further research and long-term evaluation are needed.
+```
 
 **Gemini Output:**
 
+```text
 This review explores digital twins (virtual system replicas) in crop management.
 
 - **Objective:** Synthesize research methods and roles.
@@ -231,6 +256,7 @@ This review explores digital twins (virtual system replicas) in crop management.
 - **Applications:** Optimizes irrigation, yield forecasting, and pest control.
 - **Challenges:** Poor data quality, high costs, and cybersecurity issues.
 - **Conclusion:** Though early-stage, digital twins significantly enhance agricultural sustainability.
+```
 
 **Observation:** ChatGPT explained the modelling approaches individually and provided more technical detail. Gemini produced a concise, easy-to-read summary.
 
@@ -238,11 +264,15 @@ This review explores digital twins (virtual system replicas) in crop management.
 
 **ChatGPT Output:**
 
+```text
 This review examines digital twin applications in crop monitoring and their role in improving crop management. It identifies five modelling approaches: physics-based, data-driven, hybrid, agent-based, and spatial models. Applications include crop health monitoring, yield prediction, irrigation optimization, and pest and disease management. Challenges include poor data quality, high costs, data integration, cybersecurity, and privacy. The article concludes that digital twins can improve agricultural productivity, decision-making, and sustainability, but further research is needed for wider adoption.
+```
 
 **Gemini Output:**
 
+```text
 This article explores digital twin applications in crop management to improve productivity and decision-making. It identifies physics-based, data-driven, hybrid, agent-based, and spatial modeling approaches. Applications include monitoring crop health, irrigation, pest management, and yield prediction. Implementation challenges involve poor data quality, integration issues, cybersecurity risks, and high costs. The conclusion states that although still in its early stages, digital twin technology holds significant potential to drive agricultural transformation, economic growth, and sustainability under climate change.
+```
 
 **Observation:** Both tools followed the paragraph format and generated concise summaries. ChatGPT included privacy concerns, while Gemini emphasized agricultural transformation.
 
@@ -250,10 +280,13 @@ This article explores digital twin applications in crop management to improve pr
 
 **ChatGPT Output:**
 
+```text
 The article reviews digital twins for improving crop monitoring and management. It identifies five modelling approaches: physics-based, data-driven, hybrid, agent-based, and spatial models. Applications include crop health monitoring, yield prediction, irrigation management, and pest detection. Challenges include poor data quality, high costs, cybersecurity, data integration, and limited internet connectivity. The article concludes that digital twins can improve farming decisions, productivity, and sustainability, but further research and long-term evaluation are needed.
+```
 
 **Gemini Output:**
 
+```text
 1. **Objective:** This article explores digital twin applications in crop management, focusing on modeling approaches, architecture, and challenges.
 
 2. **Key Concepts:** A digital twin is a virtual representation of a physical crop system updated with real-time sensor and satellite data.
@@ -267,6 +300,7 @@ The article reviews digital twins for improving crop monitoring and management. 
 6. **Challenges:** Major hurdles include poor data quality, integration complexities, high costs, and cybersecurity risks.
 
 7. **Conclusion:** Digital twins offer great potential for sustainable agriculture, though long-term performance studies are still required.
+```
 
 **Observation:** Gemini followed all seven requested headings. ChatGPT provided a paragraph instead of the requested structure. Gemini demonstrated better adherence to the specified output format in this experiment.
 
@@ -274,6 +308,7 @@ The article reviews digital twins for improving crop monitoring and management. 
 
 **ChatGPT Output:**
 
+```text
 ### Objective
 
 The article reviews digital twin methods, applications, architecture, challenges, and future opportunities in crop monitoring.
@@ -305,9 +340,11 @@ Poor data quality, integration difficulties, high costs, complex modelling, cybe
 ### Conclusion
 
 Digital twins offer promising sustainable farming solutions. Future research should establish standard methods, compare traditional approaches, and evaluate long-term performance across multiple growing seasons.
+```
 
 **Gemini Output:**
 
+```text
 - **Objective**: Explore digital twin applications, modeling methodologies, architecture, and challenges in crop management.
 - **Key Concepts**: Virtual crop representations integrating real-time sensor, satellite, and weather data for precision monitoring.
 - **Modelling Approaches**: Physics-based, data-driven, hybrid, agent-based, and spatial models.
@@ -315,6 +352,7 @@ Digital twins offer promising sustainable farming solutions. Future research sho
 - **Applications**: Crop health tracking, irrigation management, yield prediction, pest/disease control, and sustainability compliance.
 - **Challenges**: Data quality and integration issues, high technology costs, cybersecurity risks, and physical-virtual synchronization difficulties.
 - **Conclusion**: Digital twins hold transformative potential for sustainable agriculture. Future research requires standardized methodologies, multi-season performance evaluations, and end-user integration insights.
+```
 
 **Observation:** ChatGPT provided individual explanations of all five modelling approaches. Gemini included publication trends and physical–virtual synchronization challenges. Both produced structured summaries with the requested sections.
 
