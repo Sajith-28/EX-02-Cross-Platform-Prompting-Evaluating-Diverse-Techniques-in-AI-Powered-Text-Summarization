@@ -444,7 +444,7 @@ Both AI tools successfully summarized the selected research article. ChatGPT gen
 - Evaluation scores were assigned through reviewer judgment rather than independent expert validation.
 - Repeated trials and a standardized factual accuracy rubric are needed to strengthen the results.
 
-## 12. Conclusion
+## 12. Result
 
 This experiment evaluated six prompting techniques using ChatGPT and Google Gemini for technical research article summarization.
 
